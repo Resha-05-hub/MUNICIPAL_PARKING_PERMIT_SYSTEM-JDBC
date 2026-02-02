@@ -73,8 +73,8 @@ CREATE TABLE PERMIT_HOLDER_TBL (
     Permit_Holder_ID VARCHAR2(20) PRIMARY KEY,
     Full_Name        VARCHAR2(100) NOT NULL,
     Holder_Type      VARCHAR2(20),
-    AddressLine1      VARCHAR2(100), 
-    AddressLine2      VARCHAR2(100),
+    AddressLine1     VARCHAR2(100), 
+    AddressLine2     VARCHAR2(100),
     Ward_Code        VARCHAR2(10),
     Mobile           VARCHAR2(15),
     Email            VARCHAR2(50),
@@ -100,22 +100,20 @@ COMMIT;
 -- Verify Table Creation
 SELECT * FROM PERMIT_HOLDER_TBL;
 SELECT * FROM PARKING_PERMIT_TBL;
-
+```
+---
+## 📸 Project Output Screenshots
 ---
 
-## 📸 Project Output Screenshots
-
 ### 1. Console Output (Java Execution)
-
-![Java Console Output](<img width="1565" height="368" alt="image" src="https://github.com/user-attachments/assets/e5c4548a-850e-46e8-8a02-ede1f73dd73f" />
-)
+![Java Console Output](https://github.com/user-attachments/assets/e5c4548a-850e-46e8-8a02-ede1f73dd73f)
 
 ### 2. Database Verification (Oracle SQL)
 
-**Permit Holder Master Records:**
-![Permit Holder Table](<img width="1645" height="311" alt="image" src="https://github.com/user-attachments/assets/40cd7cfc-4c89-4cf5-89ca-d7459e9fa6c6" />
-)
+**Permit Holder Master Records**
+![Permit Holder Table](https://github.com/user-attachments/assets/40cd7cfc-4c89-4cf5-89ca-d7459e9fa6c6)
 
-**Parking Permit Transaction Records:**
-![Parking Permit Table](<img width="1819" height="318" alt="image" src="https://github.com/user-attachments/assets/4ba813af-2399-4b2a-8fc3-2cbbfbcc3f0a" />
-)
+**Parking Permit Transaction Records**
+![Parking Permit Table](https://github.com/user-attachments/assets/4ba813af-2399-4b2a-8fc3-2cbbfbcc3f0a)
+
+
