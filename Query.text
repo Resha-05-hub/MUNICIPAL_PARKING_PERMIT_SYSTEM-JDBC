@@ -1,0 +1,32 @@
+-- Create Permit Holder Master Table
+CREATE TABLE PERMIT_HOLDER_TBL (
+    Permit_Holder_ID VARCHAR2(20) PRIMARY KEY,
+    Full_Name        VARCHAR2(100) NOT NULL,
+    Holder_Type      VARCHAR2(20),
+    AddressLine1     VARCHAR2(100), 
+    AddressLine2     VARCHAR2(100),
+    Ward_Code        VARCHAR2(10),
+    Mobile           VARCHAR2(15),
+    Email            VARCHAR2(50),
+    Status           VARCHAR2(10) DEFAULT 'ACTIVE'
+);
+
+-- Create Parking Permit Transactional Table
+CREATE TABLE PARKING_PERMIT_TBL (
+    Permit_ID          VARCHAR2(20) PRIMARY KEY,
+    Permit_Holder_ID   VARCHAR2(20) REFERENCES PERMIT_HOLDER_TBL(Permit_Holder_ID),
+    Vehicle_Reg_No     VARCHAR2(20),
+    Vehicle_Type       VARCHAR2(20),
+    Zone_Code          VARCHAR2(10),
+    Permit_Start_Date  DATE,
+    Permit_End_Date    DATE,
+    Permit_Status      VARCHAR2(15),
+    Violation_Count    NUMBER(5),
+    Outstanding_Fine   NUMBER(10, 2)
+);
+
+COMMIT;
+
+-- Verify Table Creation
+SELECT * FROM PERMIT_HOLDER_TBL;
+SELECT * FROM PARKING_PERMIT_TBL;
