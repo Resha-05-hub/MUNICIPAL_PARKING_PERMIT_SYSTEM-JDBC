@@ -1,4 +1,4 @@
-# Municipal Parking Permit Application & Violation Tracking System
+# 🚗 Municipal Parking Permit Application & Violation Tracking System
 
 A console-based Java application designed to assist municipal authorities in managing residential and commercial parking permits while tracking vehicle violations and fines using JDBC.
 
